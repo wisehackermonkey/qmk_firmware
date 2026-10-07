@@ -10,9 +10,10 @@
         "mousekey": true,
         "nkro": true
     },
+  
     "matrix_pins": {
-        "cols": ["GP0"],
-        "rows": ["GP1"]
+        "cols": ["GP0","GP1","GP2","GP3","GP4","GP5"],
+        "rows": ["GP15"]
     },
     "processor": "RP2040",
     "url": "https://www.github.com/wisehackermonkey/oranpad",
@@ -22,9 +23,14 @@
         "vid": "0xFEED"
     },
     "layouts": {
-        "LAYOUT_ortho_1x1": {
+        "LAYOUT_ortho_1x6": {
             "layout": [
-                {"matrix": [0, 0], "x": 0, "y": 0}
+                {"matrix": [0, 0], "x": 0, "y": 0},
+                {"matrix": [0, 1], "x": 1, "y": 0},
+                {"matrix": [0, 2], "x": 2, "y": 0},
+                {"matrix": [0, 3], "x": 3, "y": 0},
+                {"matrix": [0, 4], "x": 4, "y": 0},
+                {"matrix": [0, 5], "x": 5, "y": 0}
             ]
         }
     }
