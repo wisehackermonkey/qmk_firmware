@@ -49,15 +49,15 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
     switch (keycode) {
         case CM_1:
-            SEND_STRING(SS_TAP(X_UP) SS_DELAY(100) SS_TAP(X_ENTER)) SS_DELAY(100);
+            SEND_STRING(SS_TAP(X_UP) SS_DELAY(100) SS_TAP(X_ENTER) SS_DELAY(200));
             return false;
 
         case CM_2:
-            SEND_STRING(SS_TAP(X_UP) SS_DELAY(100) SS_TAP(X_RIGHT) SS_TAP(X_ENTER)) SS_DELAY(100);
+            SEND_STRING(SS_TAP(X_UP) SS_DELAY(100) SS_TAP(X_RIGHT) SS_TAP(X_ENTER) SS_DELAY(200));
             return false;
 
         case CM_3:
-            SEND_STRING(SS_TAP(X_UP) SS_DELAY(100) SS_TAP(X_RIGHT) SS_TAP(X_RIGHT) SS_TAP(X_ENTER)) SS_DELAY(100);
+            SEND_STRING(SS_TAP(X_UP) SS_DELAY(100) SS_TAP(X_RIGHT) SS_TAP(X_RIGHT) SS_TAP(X_ENTER) SS_DELAY(200));
             return false;
     }
     return true;
